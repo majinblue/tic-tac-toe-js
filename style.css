@@ -1,6 +1,7 @@
 html, body {
   width: 100vw;
   height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -8,21 +9,77 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: bisque;
+}
+
+#heading {
+  font-size: 2rem;
+}
+
+#game-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 1px solid black;
+  border-radius: .5rem;
+  padding: 1rem;
+  box-shadow: 4px 4px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input, button[type=submit] {
+  border-radius: .5rem;
+  border: 1px solid black;
+  box-shadow: 3px 3px;
+  transition: .4s;
+}
+
+input:hover, button[type=submit]:hover {
+  box-shadow: none;
+  cursor: pointer;
 }
 
 #game-board {
-  width: 40vw;
-  height: 40vh;
+  width: 300px;
+  height: 300px;
   display: grid;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr);
   gap: 2px;
   background-color: black;
   border: 2px solid  black;
+  padding: .5rem;
 }
 
 .space {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(197, 197, 197);
+  background-color: rgb(255, 255, 255);
+  transition: 0.4s;
+  width: 1fr;
+  height: 1fr;
+}
+
+.space:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }

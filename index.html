@@ -8,9 +8,25 @@
   <title>Tic Tac Toe</title>
 </head>
 <body>
-  <div id="game-board">
-    
+  <nav id="nav">
+    <div id="heading">Tic-Tac-Toe</div>
+  </nav>
+  <div id="game-area">
+    <form action="" id="form">
+      <div>
+        <label for="player-1">Player 1 Name</label>
+        <input type="text" id="player-1">
+      </div>
+      <div>
+        <label for="player-2">Player 2 Name</label>
+        <input type="text" id="player-2">
+      </div>
+      <button type="submit" id="submit">START GAME</button>
+    </form>
+    <div id="turn-indicator"></div>
+    <div id="game-board"></div>
   </div>
+  
 </body>
 <script src="script.js"></script>
 </html>
